@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="JobSeeker" location="225,10" size="280,350">
+    <action name="getallexperts" location="66,58" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="experts.jsp" />
+      </result>
+    </action>
+    <action name="gethistory" location="66,163" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="result.jsp" />
+      </result>
+    </action>
+    <action name="*_page" location="66,268" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="{1}.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="experts.jsp" path="/WEB-INF/jsp/experts.jsp" location="10,52" size="150,55" />
+  <webResource name="result.jsp" path="/WEB-INF/jsp/result.jsp" location="10,157" size="150,55" />
+  <webResource name="{1}.jsp" path="/WEB-INF/jsp/{1}.jsp" location="570,262" size="150,55" />
+</Struts2Diagram>
+
